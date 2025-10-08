@@ -2,7 +2,7 @@
 
 # 配置环境
 echo "准备编译环境..."
-export CCACHE_DIR="$HOME/.cache/ccache_mikernel" 
+export CCACHE_DIR="$HOME/.cache/ccache_yjkernel" 
 export CC="ccache gcc"
 export CXX="ccache g++"
 export PATH="/usr/lib/ccache:$PATH"

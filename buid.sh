@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git clone https://github.com/aj4664/KernelSU.git
 # 配置环境
 echo "准备编译环境..."
 export CCACHE_DIR="$HOME/.cache/ccache_yjkernel" 
