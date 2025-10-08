@@ -26,7 +26,8 @@ scripts/config --file out/.config \
     -d KPROBES	\
     -d KSU_SUSFS_OPEN_REDIRECT \
     -d KSU_SUSFS_SUS_PATH \
-    -e SECCOMP
+    -d KSU_MANUAL_SU \
+    -d SECCOMP
 
 # 编译内核
 echo "开始编译内核..."
