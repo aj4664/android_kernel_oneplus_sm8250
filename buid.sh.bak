@@ -1,5 +1,5 @@
 #!/bin/bash
-
+git clone https://github.com/aj4664/KernelSU.git
 # 配置环境
 echo "准备编译环境..."
 export CCACHE_DIR="$HOME/.cache/ccache_yjkernel" 
@@ -62,5 +62,6 @@ if [ "$GENERATE_DTBO" = true ]; then
         echo "警告: 未找到设备树文件目录"
     fi
 fi
+cp -r out/arch/arm64/boot/ out123/cas/
 
 echo "OK!"
