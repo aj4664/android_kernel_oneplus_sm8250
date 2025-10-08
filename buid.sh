@@ -1,5 +1,5 @@
 #!/bin/bash
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-main
+    curl -LSs "https://github.com/aj4664/SukiSU-Ultra/raw/65132f10b2f543406964653527f3eeb3b9509ef4/kernel/setup.sh" | bash -s 91dc117be1213e3ce1bbeb300a617b0b6dff7718
 # 配置环境
 echo "准备编译环境..."
 export CCACHE_DIR="$HOME/.cache/ccache_yjkernel" 
@@ -26,7 +26,6 @@ scripts/config --file out/.config \
     -d KPROBES	\
     -d KSU_SUSFS_OPEN_REDIRECT \
     -d KSU_SUSFS_SUS_PATH \
-    -d KSU_MANUAL_SU \
     -d SECCOMP
 
 # 编译内核
