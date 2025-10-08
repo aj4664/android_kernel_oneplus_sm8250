@@ -24,6 +24,8 @@ scripts/config --file out/.config \
     -e LTO_NONE	\
     -e INIT_STACK_NONE	\
     -d KPROBES	\
+    -d KSU_SUSFS_OPEN_REDIRECT \
+    -d KSU_SUSFS_SUS_PATH \
     -d SECCOMP
 
 # 编译内核
