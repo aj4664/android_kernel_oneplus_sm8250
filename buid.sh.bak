@@ -74,9 +74,6 @@ fi
     wget https://github.com/aj4664/SukiSU_KernelPatch_patch/releases/download/0.12.2/patch_linux
     chmod +x patch_linux
     ./patch_linux
-    rm Image
-    mv oImage Image
-    cp -r out/arch/arm64/boot/ out123/cas/
     cd -
 
 cp -r out/arch/arm64/boot/ out123/cas/

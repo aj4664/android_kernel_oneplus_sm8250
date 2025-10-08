@@ -1,5 +1,5 @@
 #!/bin/bash
-curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s nongki
+curl -LSs "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU-Ultra/main/kernel/setup.sh" | bash -s susfs-main
 # 配置环境
 echo "准备编译环境..."
 export CCACHE_DIR="$HOME/.cache/ccache_yjkernel" 
