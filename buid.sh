@@ -1,5 +1,5 @@
 #!/bin/bash
-    curl -LSs "https://github.com/aj4664/SukiSU-Ultra/raw/65132f10b2f543406964653527f3eeb3b9509ef4/kernel/setup.sh" | bash -s 91dc117be1213e3ce1bbeb300a617b0b6dff7718
+        curl -LSs "https://github.com/liyafe1997/SukiSU-Ultra/raw/4ff14cf0051d04209c4abd5027d99d8e7780ef5b/kernel/setup.sh" | bash -s f4863b20cc8dc0f8cc67418980f022e43014b598
 # 配置环境
 echo "准备编译环境..."
 export CCACHE_DIR="$HOME/.cache/ccache_yjkernel" 
