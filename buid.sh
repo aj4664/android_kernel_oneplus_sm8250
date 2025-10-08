@@ -17,7 +17,14 @@ echo "配置内核..."
 #自行修改配置文件
 make $COMPILER xtd_defconfig
 
-
+scripts/config --file out/.config \
+    --set-str STATIC_USERMODEHELPER_PATH /system/bin/micd \
+    -d CPU_BIG_ENDIAN	\
+    -e COMPAT_VDSO	\
+    -e LTO_NONE	\
+    -e INIT_STACK_NONE	\
+    -d KPROBES	\
+    -d SECCOMP
 
 # 编译内核
 echo "开始编译内核..."
@@ -62,6 +69,13 @@ if [ "$GENERATE_DTBO" = true ]; then
         echo "警告: 未找到设备树文件目录"
     fi
 fi
+
+    cd out/arch/arm64/boot/
+    wget https://github.com/aj4664/SukiSU_KernelPatch_patch/releases/download/0.12.2/patch_linux
+    chmod +x patch_linux
+    ./patch_linux
+    cd -
+
 cp -r out/arch/arm64/boot/ out123/cas/
 
 echo "OK!"
